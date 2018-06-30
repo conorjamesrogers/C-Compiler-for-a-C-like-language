@@ -1,0 +1,150 @@
+ROOT "<>" (0.0.0) {0} 
+|  PROTOTYPE "" (6.28.1) {0} 
+|  |  VOID "void" (6.28.1) {160} 
+|  |  |  DECLID "__assert_fail" (6.28.6) {0} function 
+|  |  PARAMLIST "(" (6.28.20) {0} 
+|  |  |  STRING "string" (6.28.21) {1} string 
+|  |  |  |  DECLID "expr" (6.28.28) {0} string variable lval (6.4.28)
+|  |  |  STRING "string" (6.28.34) {1} string 
+|  |  |  |  DECLID "file" (6.28.41) {0} string variable lval (6.4.28)
+|  |  |  INT "int" (6.28.47) {1} int 
+|  |  |  |  DECLID "line" (6.28.51) {0} int variable lval (6.4.28)
+|  PROTOTYPE "" (6.29.1) {0} 
+|  |  VOID "void" (6.29.1) {0} 
+|  |  |  DECLID "putb" (6.29.6) {0} function 
+|  |  PARAMLIST "(" (6.29.11) {0} 
+|  |  |  INT "int" (6.29.12) {2} int 
+|  |  |  |  DECLID "b" (6.29.16) {0} int variable lval (6.4.29)
+|  PROTOTYPE "" (6.30.1) {0} 
+|  |  VOID "void" (6.30.1) {0} 
+|  |  |  DECLID "putc" (6.30.6) {0} function 
+|  |  PARAMLIST "(" (6.30.11) {0} 
+|  |  |  INT "int" (6.30.12) {3} int 
+|  |  |  |  DECLID "c" (6.30.16) {0} int variable lval (6.4.30)
+|  PROTOTYPE "" (6.31.1) {0} 
+|  |  VOID "void" (6.31.1) {0} 
+|  |  |  DECLID "puti" (6.31.6) {0} function 
+|  |  PARAMLIST "(" (6.31.11) {0} 
+|  |  |  INT "int" (6.31.12) {4} int 
+|  |  |  |  DECLID "i" (6.31.16) {0} int variable lval (6.4.31)
+|  PROTOTYPE "" (6.32.1) {0} 
+|  |  VOID "void" (6.32.1) {0} 
+|  |  |  DECLID "puts" (6.32.6) {0} function 
+|  |  PARAMLIST "(" (6.32.11) {0} 
+|  |  |  STRING "string" (6.32.12) {5} string 
+|  |  |  |  DECLID "s" (6.32.19) {0} string variable lval (6.4.32)
+|  PROTOTYPE "" (6.33.1) {0} 
+|  |  VOID "void" (6.33.1) {0} 
+|  |  |  DECLID "endl" (6.33.6) {0} function 
+|  |  PARAMLIST "(" (6.33.11) {0} 
+|  PROTOTYPE "" (6.34.1) {0} 
+|  |  INT "int" (6.34.1) {0} int 
+|  |  |  DECLID "getc" (6.34.5) {0} function 
+|  |  PARAMLIST "(" (6.34.10) {15133360} 
+|  PROTOTYPE "" (6.35.1) {0} 
+|  |  STRING "string" (6.35.1) {0} string 
+|  |  |  DECLID "getw" (6.35.8) {0} function 
+|  |  PARAMLIST "(" (6.35.13) {0} 
+|  PROTOTYPE "" (6.36.1) {0} 
+|  |  STRING "string" (6.36.1) {0} string 
+|  |  |  DECLID "getln" (6.36.8) {0} function 
+|  |  PARAMLIST "(" (6.36.14) {0} 
+|  PROTOTYPE "" (6.37.7) {0} 
+|  |  ARRAY "[]" (6.37.7) {0} string array vreg 
+|  |  |  STRING "string" (6.37.1) {0} string array 
+|  |  |  DECLID "getargv" (6.37.10) {0} string function 
+|  |  PARAMLIST "(" (6.37.18) {0} 
+|  PROTOTYPE "" (6.38.1) {0} 
+|  |  VOID "void" (6.38.1) {0} 
+|  |  |  DECLID "exit" (6.38.6) {0} function 
+|  |  PARAMLIST "(" (6.38.11) {0} 
+|  |  |  INT "int" (6.38.12) {11} int 
+|  |  |  |  DECLID "status" (6.38.16) {0} int variable lval (6.4.38)
+|  VARDECL "=" (7.7.13) {0} 
+|  |  ARRAY "[]" (7.7.4) {0} int array vreg 
+|  |  |  INT "int" (7.7.1) {0} int 
+|  |  |  DECLID "sieve" (7.7.7) {0} array variable lval (7.3.7)
+|  |  NEWARRAY "new" (7.7.15) {0} 
+|  |  |  INT "int" (7.7.19) {0} int 
+|  |  |  INTCON "100" (7.7.23) {0} int const 
+|  VARDECL "=" (7.8.11) {0} 
+|  |  INT "int" (7.8.1) {0} int 
+|  |  |  DECLID "index" (7.8.5) {0} int variable lval (7.3.8)
+|  |  INTCON "2" (7.8.13) {0} int const 
+|  WHILE "while" (7.10.1) {0} 
+|  |  LT "<" (7.10.14) {0} int vreg 
+|  |  |  IDENT "index" (7.10.8) {0} int variable lval (7.3.10)
+|  |  |  INTCON "100" (7.10.16) {0} int const 
+|  |  BLOCK "{" (7.10.21) {0} 
+|  |  |  '=' "=" (7.11.17) {0} vreg 
+|  |  |  |  INDEX "[" (7.11.9) {0} lval vaddr 
+|  |  |  |  |  IDENT "sieve" (7.11.4) {0} array variable lval (7.5.11)
+|  |  |  |  |  IDENT "index" (7.11.10) {0} int variable lval (7.5.11)
+|  |  |  |  INTCON "1" (7.11.19) {0} int const 
+|  |  |  '=' "=" (7.12.10) {0} int vreg 
+|  |  |  |  IDENT "index" (7.12.4) {0} int variable lval (7.4.12)
+|  |  |  |  '+' "+" (7.12.18) {0} int vreg 
+|  |  |  |  |  IDENT "index" (7.12.12) {0} int variable lval (7.5.12)
+|  |  |  |  |  INTCON "1" (7.12.20) {0} int const 
+|  VARDECL "=" (7.15.11) {0} 
+|  |  INT "int" (7.15.1) {0} int 
+|  |  |  DECLID "prime" (7.15.5) {0} int variable lval (7.3.15)
+|  |  INTCON "2" (7.15.13) {0} int const 
+|  WHILE "while" (7.16.1) {0} 
+|  |  LT "<" (7.16.14) {0} int vreg 
+|  |  |  IDENT "prime" (7.16.8) {0} int variable lval (7.3.16)
+|  |  |  INTCON "100" (7.16.16) {0} int const 
+|  |  BLOCK "{" (7.16.21) {0} 
+|  |  |  IF "if" (7.17.4) {0} 
+|  |  |  |  INDEX "[" (7.17.13) {0} lval vaddr 
+|  |  |  |  |  IDENT "sieve" (7.17.8) {0} array variable lval (7.5.17)
+|  |  |  |  |  IDENT "prime" (7.17.14) {0} int variable lval (7.5.17)
+|  |  |  |  BLOCK "{" (7.17.22) {0} 
+|  |  |  |  |  '=' "=" (7.18.13) {0} int vreg 
+|  |  |  |  |  |  IDENT "index" (7.18.7) {0} int variable lval (7.6.18)
+|  |  |  |  |  |  '*' "*" (7.18.21) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "prime" (7.18.15) {0} int variable lval (7.7.18)
+|  |  |  |  |  |  |  INTCON "2" (7.18.23) {0} int const 
+|  |  |  |  |  WHILE "while" (7.19.7) {0} 
+|  |  |  |  |  |  LT "<" (7.19.20) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "index" (7.19.14) {0} int variable lval (7.7.19)
+|  |  |  |  |  |  |  INTCON "100" (7.19.22) {0} int const 
+|  |  |  |  |  |  BLOCK "{" (7.19.27) {0} 
+|  |  |  |  |  |  |  '=' "=" (7.20.23) {0} vreg 
+|  |  |  |  |  |  |  |  INDEX "[" (7.20.15) {0} lval vaddr 
+|  |  |  |  |  |  |  |  |  IDENT "sieve" (7.20.10) {0} array variable lval (7.9.20)
+|  |  |  |  |  |  |  |  |  IDENT "index" (7.20.16) {0} int variable lval (7.9.20)
+|  |  |  |  |  |  |  |  INTCON "0" (7.20.25) {0} int const 
+|  |  |  |  |  |  |  '=' "=" (7.21.16) {15137840} int vreg 
+|  |  |  |  |  |  |  |  IDENT "index" (7.21.10) {0} int variable lval (7.8.21)
+|  |  |  |  |  |  |  |  '+' "+" (7.21.24) {0} int vreg 
+|  |  |  |  |  |  |  |  |  IDENT "index" (7.21.18) {0} int variable lval (7.9.21)
+|  |  |  |  |  |  |  |  |  IDENT "prime" (7.21.26) {0} int variable lval (7.9.21)
+|  |  |  '=' "=" (7.24.10) {0} int vreg 
+|  |  |  |  IDENT "prime" (7.24.4) {0} int variable lval (7.4.24)
+|  |  |  |  '+' "+" (7.24.18) {0} int vreg 
+|  |  |  |  |  IDENT "prime" (7.24.12) {0} int variable lval (7.5.24)
+|  |  |  |  |  INTCON "1" (7.24.20) {0} int const 
+|  '=' "=" (7.27.7) {0} int vreg 
+|  |  IDENT "index" (7.27.1) {0} int variable lval (7.2.27)
+|  |  INTCON "2" (7.27.9) {0} int const 
+|  WHILE "while" (7.28.1) {0} 
+|  |  LT "<" (7.28.14) {0} int vreg 
+|  |  |  IDENT "index" (7.28.8) {0} int variable lval (7.3.28)
+|  |  |  INTCON "100" (7.28.16) {0} int const 
+|  |  BLOCK "{" (7.28.21) {0} 
+|  |  |  IF "if" (7.29.4) {0} 
+|  |  |  |  INDEX "[" (7.29.13) {0} lval vaddr 
+|  |  |  |  |  IDENT "sieve" (7.29.8) {0} array variable lval (7.5.29)
+|  |  |  |  |  IDENT "index" (7.29.14) {0} int variable lval (7.5.29)
+|  |  |  |  BLOCK "{" (7.29.22) {0} 
+|  |  |  |  |  CALL "(" (7.30.12) {0} void function vreg 
+|  |  |  |  |  |  IDENT "puti" (7.30.7) {0} void function 
+|  |  |  |  |  |  IDENT "index" (7.30.13) {0} int variable lval (7.6.30)
+|  |  |  |  |  CALL "(" (7.31.12) {0} void function vreg 
+|  |  |  |  |  |  IDENT "endl" (7.31.7) {0} void function 
+|  |  |  '=' "=" (7.33.10) {0} int vreg 
+|  |  |  |  IDENT "index" (7.33.4) {0} int variable lval (7.4.33)
+|  |  |  |  '+' "+" (7.33.18) {0} int vreg 
+|  |  |  |  |  IDENT "index" (7.33.12) {0} int variable lval (7.5.33)
+|  |  |  |  |  INTCON "1" (7.33.20) {0} int const 

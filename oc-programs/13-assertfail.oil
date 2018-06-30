@@ -1,0 +1,18 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+void __ocmain (void)
+{
+        char* s2 = __getargv ();
+        int *a1 = &s2[0];
+        __puts((*a1));
+        __puts(" was compiled ");
+        __puts("Dec  7 2017");
+        __puts(" @ ");
+        __puts("18:20:22");
+        __endl();
+        int i3 = "assert" == "fail";
+        if(!i3) goto fi_7_12_2;
+        ____assert_fail("\"assert\" == \"fail\"", "oc-programs/13-assertfail.oc", 12);
+fi_7_12_2:;
+}

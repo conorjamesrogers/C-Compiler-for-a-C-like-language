@@ -1,0 +1,95 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+struct s_stack {
+        int f_stack_data;
+        int f_stack_size;
+        int f_stack_top;
+};
+char **__argv;
+s_stack*  __stack;
+int __argi;
+s_stack*  __new_stack (
+        int _size)
+{
+        struct s_stack* __stack = xcalloc (1, sizeof (struct s_stack));
+        *a1 = &__stack->f_stack_data;
+        (*a1) = xcalloc (_size, sizeof(char));
+        *a2 = &__stack->f_stack_size;
+        (*a2) = _size;
+        *a3 = &__stack->f_stack_top;
+        (*a3) = -1;
+        return __stack;
+}
+ __push (
+        s_stack*  __stack,
+        char* _14_str)
+{
+        *a5 = &__stack->f_stack_top;
+        *a6 = &__stack->f_stack_size;
+        int i7 = (*a6) - 1;
+        int i4 = (*a5) < i7;
+        if(!i4) goto fi_7_22_5;
+        ____assert_fail("stack.top < stack.size - 1", "oc-programs/40-arraystack.oc", 22);
+fi_7_22_5:;
+        *a8 = &__stack->f_stack_top;
+        int i9 = (*a8) + 1;
+        *a10 = &__stack->f_stack_top;
+        (*a10) = i9;
+        *a12 = &__stack->f_stack_top;
+        *a13 = &__stack->f_stack_data;
+        a11 = &(*a13)[(*a12)];
+        (*a11) = _14_str;
+}
+char* __pop (
+        s_stack*  __stack)
+{
+        *a15 = &__stack->f_stack_top;
+        int i14 = (*a15) != -1;
+        if(!i14) goto fi_7_28_5;
+        ____assert_fail("stack.top != EMPTY", "oc-programs/40-arraystack.oc", 28);
+fi_7_28_5:;
+        *a16 = &__stack->f_stack_top;
+        *a17 = &__stack->f_stack_data;
+        char* _18_tmp = (*a17)[(*a16)];
+        *a18 = &__stack->f_stack_top;
+        int i19 = (*a18) - 1;
+        *a20 = &__stack->f_stack_top;
+        (*a20) = i19;
+        return _18_tmp;
+}
+int __empty (
+        s_stack*  __stack)
+{
+        *a21 = &__stack->f_stack_top;
+        return (*a21) == -1;
+}
+void __ocmain (void)
+{
+        char* s23 = __getargv ();
+        __argv = s23;
+100);
+        __stack = ;
+        __argi = 0;
+while_7_43_1:;
+        char *a25 = &__argv[__argi];
+        int i24 = (*a25) != 0;
+        char *a26 = &__argv[__argi];
+        if(!i24) goto break_7_43_1;
+        char *a27 = &__argv[__argi];
+        __push(__stack, (*a27));
+        int i28 = __argi + 1;
+        __argi = i28;
+        goto while_7_43_1;
+break_7_43_1:;
+while_7_48_1:;
+        int i30 = __empty (__stack);
+        int i29 = i30;
+        int i31 = __empty (__stack);
+        if(!i29) goto break_7_48_1;
+        char* s32 = __pop (__stack);
+        __puts(s32);
+        __endl();
+        goto while_7_48_1;
+break_7_48_1:;
+}

@@ -1,0 +1,9 @@
+# 1 "oc-programs/90-c8q.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "oc-programs/90-c8q.oc"
+4    4.028   281   TOK_CALL      (()
+4    4.027   276   TOK_IDENT     (Q)
+4    4.029   277   TOK_INTCON    (0)
+4    4.031   277   TOK_INTCON    (0)
+4    4.033   277   TOK_INTCON    (0)

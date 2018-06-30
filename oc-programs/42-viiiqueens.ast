@@ -1,0 +1,202 @@
+ROOT "<>" (0.0.0) {0} 
+|  PROTOTYPE "" (6.28.1) {0} 
+|  |  VOID "void" (6.28.1) {160} 
+|  |  |  DECLID "__assert_fail" (6.28.6) {0} function 
+|  |  PARAMLIST "(" (6.28.20) {0} 
+|  |  |  STRING "string" (6.28.21) {1} string 
+|  |  |  |  DECLID "expr" (6.28.28) {0} string variable lval (6.4.28)
+|  |  |  STRING "string" (6.28.34) {1} string 
+|  |  |  |  DECLID "file" (6.28.41) {0} string variable lval (6.4.28)
+|  |  |  INT "int" (6.28.47) {1} int 
+|  |  |  |  DECLID "line" (6.28.51) {0} int variable lval (6.4.28)
+|  PROTOTYPE "" (6.29.1) {0} 
+|  |  VOID "void" (6.29.1) {0} 
+|  |  |  DECLID "putb" (6.29.6) {0} function 
+|  |  PARAMLIST "(" (6.29.11) {0} 
+|  |  |  INT "int" (6.29.12) {2} int 
+|  |  |  |  DECLID "b" (6.29.16) {0} int variable lval (6.4.29)
+|  PROTOTYPE "" (6.30.1) {0} 
+|  |  VOID "void" (6.30.1) {0} 
+|  |  |  DECLID "putc" (6.30.6) {0} function 
+|  |  PARAMLIST "(" (6.30.11) {0} 
+|  |  |  INT "int" (6.30.12) {3} int 
+|  |  |  |  DECLID "c" (6.30.16) {0} int variable lval (6.4.30)
+|  PROTOTYPE "" (6.31.1) {0} 
+|  |  VOID "void" (6.31.1) {0} 
+|  |  |  DECLID "puti" (6.31.6) {0} function 
+|  |  PARAMLIST "(" (6.31.11) {0} 
+|  |  |  INT "int" (6.31.12) {4} int 
+|  |  |  |  DECLID "i" (6.31.16) {0} int variable lval (6.4.31)
+|  PROTOTYPE "" (6.32.1) {0} 
+|  |  VOID "void" (6.32.1) {0} 
+|  |  |  DECLID "puts" (6.32.6) {0} function 
+|  |  PARAMLIST "(" (6.32.11) {0} 
+|  |  |  STRING "string" (6.32.12) {5} string 
+|  |  |  |  DECLID "s" (6.32.19) {0} string variable lval (6.4.32)
+|  PROTOTYPE "" (6.33.1) {0} 
+|  |  VOID "void" (6.33.1) {0} 
+|  |  |  DECLID "endl" (6.33.6) {0} function 
+|  |  PARAMLIST "(" (6.33.11) {0} 
+|  PROTOTYPE "" (6.34.1) {0} 
+|  |  INT "int" (6.34.1) {0} int 
+|  |  |  DECLID "getc" (6.34.5) {0} function 
+|  |  PARAMLIST "(" (6.34.10) {27679472} 
+|  PROTOTYPE "" (6.35.1) {0} 
+|  |  STRING "string" (6.35.1) {0} string 
+|  |  |  DECLID "getw" (6.35.8) {0} function 
+|  |  PARAMLIST "(" (6.35.13) {0} 
+|  PROTOTYPE "" (6.36.1) {0} 
+|  |  STRING "string" (6.36.1) {0} string 
+|  |  |  DECLID "getln" (6.36.8) {0} function 
+|  |  PARAMLIST "(" (6.36.14) {0} 
+|  PROTOTYPE "" (6.37.7) {0} 
+|  |  ARRAY "[]" (6.37.7) {0} string array vreg 
+|  |  |  STRING "string" (6.37.1) {0} string array 
+|  |  |  DECLID "getargv" (6.37.10) {0} string function 
+|  |  PARAMLIST "(" (6.37.18) {0} 
+|  PROTOTYPE "" (6.38.1) {0} 
+|  |  VOID "void" (6.38.1) {0} 
+|  |  |  DECLID "exit" (6.38.6) {0} function 
+|  |  PARAMLIST "(" (6.38.11) {0} 
+|  |  |  INT "int" (6.38.12) {11} int 
+|  |  |  |  DECLID "status" (6.38.16) {0} int variable lval (6.4.38)
+|  VARDECL "=" (7.6.13) {0} 
+|  |  ARRAY "[]" (7.6.4) {0} int array vreg 
+|  |  |  INT "int" (7.6.1) {0} int 
+|  |  |  DECLID "board" (7.6.7) {0} array variable lval (7.3.6)
+|  |  NEWARRAY "new" (7.6.15) {0} 
+|  |  |  INT "int" (7.6.19) {0} int 
+|  |  |  INTCON "8" (7.6.23) {0} int const 
+|  FUNCTION "" (7.8.1) {0} 
+|  |  INT "int" (7.8.1) {0} int 
+|  |  |  DECLID "is_safe" (7.8.5) {0} function 
+|  |  PARAMLIST "(" (7.8.13) {0} 
+|  |  |  INT "int" (7.8.14) {12} int 
+|  |  |  |  DECLID "newcol" (7.8.18) {12} int variable lval param (7.4.-4)
+|  |  BLOCK "{" (7.8.26) {0} 
+|  |  |  VARDECL "=" (7.9.12) {13} 
+|  |  |  |  INT "int" (7.9.4) {13} int 
+|  |  |  |  |  DECLID "col" (7.9.8) {13} int variable lval (7.5.-4)
+|  |  |  |  INTCON "0" (7.9.14) {0} int const 
+|  |  |  WHILE "while" (7.10.4) {0} 
+|  |  |  |  LT "<" (7.10.15) {0} int vreg 
+|  |  |  |  |  IDENT "col" (7.10.11) {13} int variable lval (7.5.-3)
+|  |  |  |  |  IDENT "newcol" (7.10.17) {12} int variable lval param (7.5.-2)
+|  |  |  |  BLOCK "{" (7.10.25) {0} 
+|  |  |  |  |  IF "if" (7.11.7) {0} 
+|  |  |  |  |  |  EQ "==" (7.11.22) {0} int vreg 
+|  |  |  |  |  |  |  INDEX "[" (7.11.16) {0} lval vaddr 
+|  |  |  |  |  |  |  |  IDENT "board" (7.11.11) {0} array variable lval (7.8.11)
+|  |  |  |  |  |  |  |  IDENT "col" (7.11.17) {13} int variable lval (7.8.-2)
+|  |  |  |  |  |  |  INDEX "[" (7.11.30) {0} lval vaddr 
+|  |  |  |  |  |  |  |  IDENT "board" (7.11.25) {0} array variable lval (7.8.11)
+|  |  |  |  |  |  |  |  IDENT "newcol" (7.11.31) {12} int variable lval param (7.8.-1)
+|  |  |  |  |  |  RETURN "return" (7.11.40) {0} 
+|  |  |  |  |  |  |  INTCON "0" (7.11.47) {0} int const 
+|  |  |  |  |  VARDECL "=" (7.12.20) {14} 
+|  |  |  |  |  |  INT "int" (7.12.7) {14} int 
+|  |  |  |  |  |  |  DECLID "diagonal" (7.12.11) {14} int variable lval (7.7.-2)
+|  |  |  |  |  |  '-' "-" (7.12.33) {0} int vreg 
+|  |  |  |  |  |  |  INDEX "[" (7.12.27) {0} lval vaddr 
+|  |  |  |  |  |  |  |  IDENT "board" (7.12.22) {0} array variable lval (7.8.12)
+|  |  |  |  |  |  |  |  IDENT "col" (7.12.28) {13} int variable lval (7.8.-1)
+|  |  |  |  |  |  |  INDEX "[" (7.12.40) {0} lval vaddr 
+|  |  |  |  |  |  |  |  IDENT "board" (7.12.35) {0} array variable lval (7.8.12)
+|  |  |  |  |  |  |  |  IDENT "newcol" (7.12.41) {12} int variable lval param (7.8.0)
+|  |  |  |  |  IF "if" (7.13.7) {0} 
+|  |  |  |  |  |  EQ "==" (7.13.20) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "diagonal" (7.13.11) {14} int variable lval (7.7.-1)
+|  |  |  |  |  |  |  '-' "-" (7.13.27) {0} int vreg 
+|  |  |  |  |  |  |  |  IDENT "col" (7.13.23) {13} int variable lval (7.8.0)
+|  |  |  |  |  |  |  |  IDENT "newcol" (7.13.29) {12} int variable lval param (7.8.1)
+|  |  |  |  |  |  RETURN "return" (7.13.37) {0} 
+|  |  |  |  |  |  |  INTCON "0" (7.13.44) {0} int const 
+|  |  |  |  |  IF "if" (7.14.7) {0} 
+|  |  |  |  |  |  EQ "==" (7.14.20) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "diagonal" (7.14.11) {14} int variable lval (7.7.0)
+|  |  |  |  |  |  |  '-' "-" (7.14.30) {0} int vreg 
+|  |  |  |  |  |  |  |  IDENT "newcol" (7.14.23) {12} int variable lval param (7.8.2)
+|  |  |  |  |  |  |  |  IDENT "col" (7.14.32) {13} int variable lval (7.8.1)
+|  |  |  |  |  |  RETURN "return" (7.14.37) {0} 
+|  |  |  |  |  |  |  INTCON "0" (7.14.44) {0} int const 
+|  |  |  |  |  '=' "=" (7.15.11) {0} int vreg 
+|  |  |  |  |  |  IDENT "col" (7.15.7) {13} int variable lval (7.6.2)
+|  |  |  |  |  |  '+' "+" (7.15.17) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "col" (7.15.13) {13} int variable lval (7.7.2)
+|  |  |  |  |  |  |  INTCON "1" (7.15.19) {0} int const 
+|  |  |  RETURN "return" (7.17.4) {0} 
+|  |  |  |  INTCON "1" (7.17.11) {0} int const 
+|  FUNCTION "" (7.20.1) {0} 
+|  |  VOID "void" (7.20.1) {0} 
+|  |  |  DECLID "printqueens" (7.20.6) {0} function 
+|  |  PARAMLIST "(" (7.20.18) {0} 
+|  |  BLOCK "{" (7.20.21) {0} 
+|  |  |  VARDECL "=" (7.21.12) {16} 
+|  |  |  |  INT "int" (7.21.4) {16} int 
+|  |  |  |  |  DECLID "col" (7.21.8) {16} int variable lval (7.5.5)
+|  |  |  |  INTCON "0" (7.21.14) {0} int const 
+|  |  |  WHILE "while" (7.22.4) {0} 
+|  |  |  |  LT "<" (7.22.15) {0} int vreg 
+|  |  |  |  |  IDENT "col" (7.22.11) {16} int variable lval (7.5.6)
+|  |  |  |  |  INTCON "8" (7.22.17) {0} int const 
+|  |  |  |  BLOCK "{" (7.22.20) {0} 
+|  |  |  |  |  CALL "(" (7.23.12) {0} void function vreg 
+|  |  |  |  |  |  IDENT "putc" (7.23.7) {0} void function 
+|  |  |  |  |  |  '+' "+" (7.23.24) {0} int vreg 
+|  |  |  |  |  |  |  INDEX "[" (7.23.18) {0} lval vaddr 
+|  |  |  |  |  |  |  |  IDENT "board" (7.23.13) {0} array variable lval (7.8.23)
+|  |  |  |  |  |  |  |  IDENT "col" (7.23.19) {16} int variable lval (7.8.7)
+|  |  |  |  |  |  |  CHARCON "'1'" (7.23.26) {0} int const 
+|  |  |  |  |  '=' "=" (7.24.11) {0} int vreg 
+|  |  |  |  |  |  IDENT "col" (7.24.7) {16} int variable lval (7.6.8)
+|  |  |  |  |  |  '+' "+" (7.24.17) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "col" (7.24.13) {16} int variable lval (7.7.8)
+|  |  |  |  |  |  |  INTCON "1" (7.24.19) {0} int const 
+|  |  |  CALL "(" (7.26.9) {0} void function vreg 
+|  |  |  |  IDENT "putc" (7.26.4) {0} void function 
+|  |  |  |  CHARCON "'\n'" (7.26.10) {0} int const 
+|  FUNCTION "" (7.29.1) {0} 
+|  |  VOID "void" (7.29.1) {0} 
+|  |  |  DECLID "queens" (7.29.6) {0} function 
+|  |  PARAMLIST "(" (7.29.13) {0} 
+|  |  |  INT "int" (7.29.14) {18} int 
+|  |  |  |  DECLID "newcol" (7.29.18) {18} int variable lval param (7.4.11)
+|  |  BLOCK "{" (7.29.26) {0} 
+|  |  |  IFELSE "if" (7.30.4) {0} 
+|  |  |  |  EQ "==" (7.30.15) {0} int vreg 
+|  |  |  |  |  IDENT "newcol" (7.30.8) {18} int variable lval param (7.5.12)
+|  |  |  |  |  INTCON "8" (7.30.18) {0} int const 
+|  |  |  |  CALL "(" (7.30.33) {0} void function vreg 
+|  |  |  |  |  IDENT "printqueens" (7.30.21) {0} void function 
+|  |  |  |  BLOCK "{" (7.31.9) {0} 
+|  |  |  |  |  VARDECL "=" (7.32.15) {20} 
+|  |  |  |  |  |  INT "int" (7.32.7) {20} int 
+|  |  |  |  |  |  |  DECLID "row" (7.32.11) {20} int variable lval (7.7.12)
+|  |  |  |  |  |  INTCON "0" (7.32.17) {0} int const 
+|  |  |  |  |  WHILE "while" (7.33.7) {0} 
+|  |  |  |  |  |  LT "<" (7.33.18) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "row" (7.33.14) {20} int variable lval (7.7.13)
+|  |  |  |  |  |  |  INTCON "8" (7.33.20) {0} int const 
+|  |  |  |  |  |  BLOCK "{" (7.33.23) {0} 
+|  |  |  |  |  |  |  '=' "=" (7.34.24) {0} vreg 
+|  |  |  |  |  |  |  |  INDEX "[" (7.34.15) {0} lval vaddr 
+|  |  |  |  |  |  |  |  |  IDENT "board" (7.34.10) {0} array variable lval (7.9.34)
+|  |  |  |  |  |  |  |  |  IDENT "newcol" (7.34.16) {18} int variable lval param (7.9.16)
+|  |  |  |  |  |  |  |  IDENT "row" (7.34.26) {20} int variable lval (7.8.14)
+|  |  |  |  |  |  |  IF "if" (7.35.10) {0} 
+|  |  |  |  |  |  |  |  CALL "(" (7.35.22) {0} int function vreg 
+|  |  |  |  |  |  |  |  |  IDENT "is_safe" (7.35.14) {0} int function 
+|  |  |  |  |  |  |  |  |  IDENT "newcol" (7.35.23) {18} int variable lval param (7.9.17)
+|  |  |  |  |  |  |  |  CALL "(" (7.35.39) {0} void function vreg 
+|  |  |  |  |  |  |  |  |  IDENT "queens" (7.35.32) {0} void function 
+|  |  |  |  |  |  |  |  |  '+' "+" (7.35.47) {0} int vreg 
+|  |  |  |  |  |  |  |  |  |  IDENT "newcol" (7.35.40) {18} int variable lval param (7.10.17)
+|  |  |  |  |  |  |  |  |  |  INTCON "1" (7.35.49) {0} int const 
+|  |  |  |  |  |  |  '=' "=" (7.36.14) {0} int vreg 
+|  |  |  |  |  |  |  |  IDENT "row" (7.36.10) {20} int variable lval (7.8.16)
+|  |  |  |  |  |  |  |  '+' "+" (7.36.20) {0} int vreg 
+|  |  |  |  |  |  |  |  |  IDENT "row" (7.36.16) {20} int variable lval (7.9.16)
+|  |  |  |  |  |  |  |  |  INTCON "1" (7.36.22) {0} int const 
+|  CALL "(" (7.42.8) {0} void function vreg 
+|  |  IDENT "queens" (7.42.1) {0} void function 
+|  |  INTCON "0" (7.42.9) {0} int const 

@@ -1,0 +1,4 @@
+string_set[   1]:   17074870633844561115 0xe27f18->"<>"
+load_factor = 0.500
+bucket_count = 2
+max_bucket_size = 1

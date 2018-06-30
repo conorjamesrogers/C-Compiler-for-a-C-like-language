@@ -1,0 +1,83 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+char **__argv;
+int __argi;
+int __atoi (
+        char* _12_str)
+{
+        int i1 = _12_str != 0;
+        if(!i1) goto fi_7_6_5;
+        ____assert_fail("str != null", "oc-programs/23-atoi.oc", 6);
+fi_7_6_5:;
+        int _13_neg = 0;
+        int _13_num = 0;
+        int _13_digit = 0;
+        int *a3 = &_12_str[0];
+        int i2 = (*a3) != '\0';
+        if(!i2) goto fi_7_10_4;
+        int *a5 = &_12_str[0];
+        int i4 = (*a5) == '-';
+        if(!i4) goto fi_7_11_7;
+        int i6 = _13_digit + 1;
+        _13_digit = i6;
+        _13_neg = 1;
+fi_7_11_7:;
+        int _15_contin = 1;
+while_7_16_7:;
+        if(!_15_contin) goto break_7_16_7;
+        int *a8 = &_12_str[_13_digit];
+        int i7 = (*a8) == '\0';
+        if(!i7) goto else_7_17_10;
+                _15_contin = 0;
+goto fi_7_17_10;
+else_7_17_10:;
+                int _19_c = _12_str[_13_digit];
+        int i9 = _13_digit + 1;
+        _13_digit = i9;
+        int i10 = _19_c < '0';
+        if(!i10) goto else_7_22_13;
+                _15_contin = 0;
+goto fi_7_22_13;
+else_7_22_13:;
+                int i11 = _19_c > '9';
+        if(!i11) goto else_7_23_18;
+                _15_contin = 0;
+goto fi_7_23_18;
+else_7_23_18:;
+                int i12 = _19_c - '0';
+        int i13 = 10 + i12;
+        int i14 = _13_num * i13;
+        _13_num = i14;
+fi_7_23_18:;
+fi_7_22_13:;
+fi_7_17_10:;
+        goto while_7_16_7;
+break_7_16_7:;
+        if(!_13_neg) goto fi_7_27_7;
+        _13_num = -_13_num;
+fi_7_27_7:;
+fi_7_10_4:;
+        return _13_num;
+}
+void __ocmain (void)
+{
+        __argi = 1;
+        char* s16 = __getargv ();
+        __argv = s16;
+while_7_34_1:;
+        char *a18 = &__argv[__argi];
+        int i17 = (*a18) != 0;
+        char *a19 = &__argv[__argi];
+        if(!i17) goto break_7_34_1;
+        char* _20_arg = __argv[__argi];
+        __puts(_20_arg);
+        __puts(" = ");
+        int i20 = __atoi (_20_arg);
+        __puti(i20);
+        __endl();
+        int i21 = __argi + 1;
+        __argi = i21;
+        goto while_7_34_1;
+break_7_34_1:;
+}

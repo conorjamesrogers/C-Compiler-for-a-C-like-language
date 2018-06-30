@@ -1,0 +1,16 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __a;
+int __b;
+int __c;
+void __ocmain (void)
+{
+        __a = 3;
+        __b = 8;
+        __c = __a + __b;
+        int i1 = __b + __c;
+        __a = i1;
+        __puti(__a);
+        __putc('\n');
+}

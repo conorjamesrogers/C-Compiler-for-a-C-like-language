@@ -1,0 +1,27 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+char **__argv;
+int __argi;
+void __ocmain (void)
+{
+        char* s2 = __getargv ();
+        __argv = s2;
+        __argi = 1;
+while_7_7_1:;
+        char *a4 = &__argv[__argi];
+        int i3 = (*a4) != 0;
+        char *a5 = &__argv[__argi];
+        if(!i3) goto break_7_7_1;
+        int i6 = __argi > 1;
+        if(!i6) goto fi_7_8_4;
+        __putc(' ');
+fi_7_8_4:;
+        char *a7 = &__argv[__argi];
+        __puts((*a7));
+        int i8 = __argi + 1;
+        __argi = i8;
+        goto while_7_7_1;
+break_7_7_1:;
+        __endl();
+}

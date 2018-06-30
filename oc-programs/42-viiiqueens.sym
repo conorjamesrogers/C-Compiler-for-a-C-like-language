@@ -1,0 +1,46 @@
+__assert_fail (6.28.6) {0} void function 
+   expr (6.28.21) {1} string variable lval 
+   file (6.28.34) {1} string variable lval 
+   line (6.28.47) {1} int variable lval 
+
+putb (6.29.6) {0} void function 
+   b (6.29.12) {2} int variable lval 
+
+putc (6.30.6) {0} void function 
+   c (6.30.12) {3} int variable lval 
+
+puti (6.31.6) {0} void function 
+   i (6.31.12) {4} int variable lval 
+
+puts (6.32.6) {0} void function 
+   s (6.32.12) {5} string variable lval 
+
+endl (6.33.6) {0} void function 
+
+getc (6.34.5) {0} int function 
+
+getw (6.35.8) {0} string function 
+
+getln (6.36.8) {0} string function 
+
+getargv (6.37.1) {0} string function 
+
+exit (6.38.6) {0} void function 
+   status (6.38.12) {11} int variable lval 
+
+board (7.6.7) {0} array variable lval 
+is_safe (7.8.5) {0} function 
+   newcol (7.8.14) {12} int variable lval param 
+
+      col (7.9.4) {13} int variable lval 
+         diagonal (7.12.7) {14} int variable lval 
+
+printqueens (7.20.6) {0} function 
+
+      col (7.21.4) {16} int variable lval 
+
+queens (7.29.6) {0} function 
+   newcol (7.29.14) {18} int variable lval param 
+
+         row (7.32.7) {20} int variable lval 
+

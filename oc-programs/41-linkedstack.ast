@@ -1,0 +1,256 @@
+ROOT "<>" (0.0.0) {0} 
+|  PROTOTYPE "" (6.28.1) {0} 
+|  |  VOID "void" (6.28.1) {160} 
+|  |  |  DECLID "__assert_fail" (6.28.6) {0} function 
+|  |  PARAMLIST "(" (6.28.20) {0} 
+|  |  |  STRING "string" (6.28.21) {1} string 
+|  |  |  |  DECLID "expr" (6.28.28) {0} string variable lval (6.4.28)
+|  |  |  STRING "string" (6.28.34) {1} string 
+|  |  |  |  DECLID "file" (6.28.41) {0} string variable lval (6.4.28)
+|  |  |  INT "int" (6.28.47) {1} int 
+|  |  |  |  DECLID "line" (6.28.51) {0} int variable lval (6.4.28)
+|  PROTOTYPE "" (6.29.1) {0} 
+|  |  VOID "void" (6.29.1) {0} 
+|  |  |  DECLID "putb" (6.29.6) {0} function 
+|  |  PARAMLIST "(" (6.29.11) {0} 
+|  |  |  INT "int" (6.29.12) {2} int 
+|  |  |  |  DECLID "b" (6.29.16) {0} int variable lval (6.4.29)
+|  PROTOTYPE "" (6.30.1) {0} 
+|  |  VOID "void" (6.30.1) {0} 
+|  |  |  DECLID "putc" (6.30.6) {0} function 
+|  |  PARAMLIST "(" (6.30.11) {0} 
+|  |  |  INT "int" (6.30.12) {3} int 
+|  |  |  |  DECLID "c" (6.30.16) {0} int variable lval (6.4.30)
+|  PROTOTYPE "" (6.31.1) {0} 
+|  |  VOID "void" (6.31.1) {0} 
+|  |  |  DECLID "puti" (6.31.6) {0} function 
+|  |  PARAMLIST "(" (6.31.11) {0} 
+|  |  |  INT "int" (6.31.12) {4} int 
+|  |  |  |  DECLID "i" (6.31.16) {0} int variable lval (6.4.31)
+|  PROTOTYPE "" (6.32.1) {0} 
+|  |  VOID "void" (6.32.1) {0} 
+|  |  |  DECLID "puts" (6.32.6) {0} function 
+|  |  PARAMLIST "(" (6.32.11) {0} 
+|  |  |  STRING "string" (6.32.12) {5} string 
+|  |  |  |  DECLID "s" (6.32.19) {0} string variable lval (6.4.32)
+|  PROTOTYPE "" (6.33.1) {0} 
+|  |  VOID "void" (6.33.1) {0} 
+|  |  |  DECLID "endl" (6.33.6) {0} function 
+|  |  PARAMLIST "(" (6.33.11) {0} 
+|  PROTOTYPE "" (6.34.1) {0} 
+|  |  INT "int" (6.34.1) {0} int 
+|  |  |  DECLID "getc" (6.34.5) {0} function 
+|  |  PARAMLIST "(" (6.34.10) {22915744} 
+|  PROTOTYPE "" (6.35.1) {0} 
+|  |  STRING "string" (6.35.1) {0} string 
+|  |  |  DECLID "getw" (6.35.8) {0} function 
+|  |  PARAMLIST "(" (6.35.13) {0} 
+|  PROTOTYPE "" (6.36.1) {0} 
+|  |  STRING "string" (6.36.1) {0} string 
+|  |  |  DECLID "getln" (6.36.8) {0} function 
+|  |  PARAMLIST "(" (6.36.14) {0} 
+|  PROTOTYPE "" (6.37.7) {0} 
+|  |  ARRAY "[]" (6.37.7) {0} string array vreg 
+|  |  |  STRING "string" (6.37.1) {0} string array 
+|  |  |  DECLID "getargv" (6.37.10) {0} string function 
+|  |  PARAMLIST "(" (6.37.18) {0} 
+|  PROTOTYPE "" (6.38.1) {0} 
+|  |  VOID "void" (6.38.1) {0} 
+|  |  |  DECLID "exit" (6.38.6) {0} function 
+|  |  PARAMLIST "(" (6.38.11) {0} 
+|  |  |  INT "int" (6.38.12) {11} int 
+|  |  |  |  DECLID "status" (6.38.16) {0} int variable lval (6.4.38)
+|  STRUCT "struct" (7.5.1) {0} struct "struct" 
+|  |  TYPEID "node" (7.5.8) {0} struct "node" 
+|  |  '{' "{" (7.5.13) {0} 
+|  |  |  STRING "string" (7.6.4) {0} string 
+|  |  |  |  FIELD "data" (7.6.11) field {node} int variable lval const vaddr (7.4.6)
+|  |  |  TYPEID "node" (7.7.4) {0} struct "node" 
+|  |  |  |  FIELD "link" (7.7.9) field {node} int variable lval const vaddr (7.4.7)
+|  STRUCT "struct" (7.10.1) {0} struct "struct" 
+|  |  TYPEID "stack" (7.10.8) {0} struct "stack" 
+|  |  '{' "{" (7.10.14) {0} 
+|  |  |  TYPEID "node" (7.11.4) {0} struct "node" 
+|  |  |  |  FIELD "top" (7.11.9) field {stack} int variable lval const vaddr (7.4.11)
+|  FUNCTION "" (7.14.1) {0} 
+|  |  INT "int" (7.14.1) {0} int 
+|  |  |  DECLID "empty" (7.14.5) {0} function 
+|  |  PARAMLIST "(" (7.14.11) {0} 
+|  |  |  TYPEID "stack" (7.14.12) {12} struct "stack" 
+|  |  |  |  DECLID "stack" (7.14.18) {12} struct "stack" variable lval param (7.4.2)
+|  |  BLOCK "{" (7.14.25) {0} 
+|  |  |  BLOCK "{" (7.15.4) {0} 
+|  |  |  |  IF "if" (7.15.5) {0} 
+|  |  |  |  |  '!' "!" (7.15.9) {0} 
+|  |  |  |  |  |  NE "!=" (7.15.17) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "stack" (7.15.11) {12} struct "stack" variable lval param (7.7.3)
+|  |  |  |  |  |  |  NULL "null" (7.15.20) {0} null const 
+|  |  |  |  |  CALL "(" (7.15.41) {0} void function vreg 
+|  |  |  |  |  |  IDENT "__assert_fail" (7.15.27) {0} void function 
+|  |  |  |  |  |  STRINGCON ""stack != null"" (7.15.42) {0} string const 
+|  |  |  |  |  |  STRINGCON ""oc-programs/41-linkedstack.oc"" (7.15.59) {0} string const 
+|  |  |  |  |  |  INTCON "15" (7.15.92) {0} int const 
+|  |  |  ';' ";" (7.15.97) {0} 
+|  |  |  RETURN "return" (7.16.4) {0} 
+|  |  |  |  EQ "==" (7.16.21) {22920224} int vreg 
+|  |  |  |  |  '.' "." (7.16.16) {0} variable lval vaddr (7.5.16)
+|  |  |  |  |  |  IDENT "stack" (7.16.11) {12} struct "stack" variable lval param (7.6.4)
+|  |  |  |  |  |  FIELD "top" (7.16.17) field {} int variable lval const vaddr (7.6.-22913568)
+|  |  |  |  |  NULL "null" (7.16.24) {0} null const 
+|  FUNCTION "" (7.19.1) {0} 
+|  |  TYPEID "stack" (7.19.1) {0} struct "stack" 
+|  |  |  DECLID "new_stack" (7.19.7) {0} function 
+|  |  PARAMLIST "(" (7.19.17) {0} 
+|  |  BLOCK "{" (7.19.20) {0} 
+|  |  |  VARDECL "=" (7.20.16) {16} 
+|  |  |  |  TYPEID "stack" (7.20.4) {16} struct "stack" 
+|  |  |  |  |  DECLID "stack" (7.20.10) {16} struct "stack" variable lval (7.5.4)
+|  |  |  |  NEW "new" (7.20.18) {0} struct "new" vreg 
+|  |  |  |  |  TYPEID "stack" (7.20.22) {0} struct "stack" 
+|  |  |  '=' "=" (7.21.14) {0} vreg 
+|  |  |  |  '.' "." (7.21.9) {0} variable lval vaddr (7.4.21)
+|  |  |  |  |  IDENT "stack" (7.21.4) {16} struct "stack" variable lval (7.5.5)
+|  |  |  |  |  FIELD "top" (7.21.10) field {} int variable lval const vaddr (7.5.21)
+|  |  |  |  NULL "null" (7.21.16) {0} null const 
+|  |  |  RETURN "return" (7.22.4) {0} 
+|  |  |  |  IDENT "stack" (7.22.11) {16} struct "stack" variable lval (7.4.6)
+|  FUNCTION "" (7.25.1) {0} 
+|  |  VOID "void" (7.25.1) {0} 
+|  |  |  DECLID "push" (7.25.6) {0} function 
+|  |  PARAMLIST "(" (7.25.11) {0} 
+|  |  |  TYPEID "stack" (7.25.12) {17} struct "stack" 
+|  |  |  |  DECLID "stack" (7.25.18) {17} struct "stack" variable lval param (7.4.8)
+|  |  |  STRING "string" (7.25.25) {17} string 
+|  |  |  |  DECLID "str" (7.25.32) {17} string variable lval param (7.4.8)
+|  |  BLOCK "{" (7.25.37) {0} 
+|  |  |  BLOCK "{" (7.26.4) {0} 
+|  |  |  |  IF "if" (7.26.5) {0} 
+|  |  |  |  |  '!' "!" (7.26.9) {0} 
+|  |  |  |  |  |  NE "!=" (7.26.17) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "stack" (7.26.11) {17} struct "stack" variable lval param (7.7.9)
+|  |  |  |  |  |  |  NULL "null" (7.26.20) {0} null const 
+|  |  |  |  |  CALL "(" (7.26.41) {0} void function vreg 
+|  |  |  |  |  |  IDENT "__assert_fail" (7.26.27) {0} void function 
+|  |  |  |  |  |  STRINGCON ""stack != null"" (7.26.42) {0} string const 
+|  |  |  |  |  |  STRINGCON ""oc-programs/41-linkedstack.oc"" (7.26.59) {0} string const 
+|  |  |  |  |  |  INTCON "26" (7.26.92) {0} int const 
+|  |  |  ';' ";" (7.26.97) {0} 
+|  |  |  VARDECL "=" (7.27.13) {18} 
+|  |  |  |  TYPEID "node" (7.27.4) {18} struct "node" 
+|  |  |  |  |  DECLID "tmp" (7.27.9) {18} struct "tmp" variable lval (7.5.9)
+|  |  |  |  NEW "new" (7.27.15) {0} struct "new" vreg 
+|  |  |  |  |  TYPEID "node" (7.27.19) {0} struct "node" 
+|  |  |  '=' "=" (7.28.13) {0} vreg 
+|  |  |  |  '.' "." (7.28.7) {0} variable lval vaddr (7.4.28)
+|  |  |  |  |  IDENT "tmp" (7.28.4) {18} struct "tmp" variable lval (7.5.10)
+|  |  |  |  |  FIELD "data" (7.28.8) field {} int variable lval const vaddr (7.5.28)
+|  |  |  |  IDENT "str" (7.28.15) {17} string variable lval param (7.4.11)
+|  |  |  '=' "=" (7.29.13) {0} vreg 
+|  |  |  |  '.' "." (7.29.7) {0} variable lval vaddr (7.4.29)
+|  |  |  |  |  IDENT "tmp" (7.29.4) {18} struct "tmp" variable lval (7.5.11)
+|  |  |  |  |  FIELD "link" (7.29.8) field {} int variable lval const vaddr (7.5.29)
+|  |  |  |  '.' "." (7.29.20) {0} variable lval vaddr (7.4.29)
+|  |  |  |  |  IDENT "stack" (7.29.15) {17} struct "stack" variable lval param (7.5.12)
+|  |  |  |  |  FIELD "top" (7.29.21) field {} int variable lval const vaddr (7.5.29)
+|  |  |  '=' "=" (7.30.14) {0} vreg 
+|  |  |  |  '.' "." (7.30.9) {0} variable lval vaddr (7.4.30)
+|  |  |  |  |  IDENT "stack" (7.30.4) {17} struct "stack" variable lval param (7.5.13)
+|  |  |  |  |  FIELD "top" (7.30.10) field {} int variable lval const vaddr (7.5.30)
+|  |  |  |  IDENT "tmp" (7.30.16) {18} struct "tmp" variable lval (7.4.12)
+|  FUNCTION "" (7.33.1) {0} 
+|  |  STRING "string" (7.33.1) {0} string 
+|  |  |  DECLID "pop" (7.33.8) {0} function 
+|  |  PARAMLIST "(" (7.33.12) {0} 
+|  |  |  TYPEID "stack" (7.33.13) {20} struct "stack" 
+|  |  |  |  DECLID "stack" (7.33.19) {20} struct "stack" variable lval param (7.4.13)
+|  |  BLOCK "{" (7.33.26) {0} 
+|  |  |  BLOCK "{" (7.34.4) {0} 
+|  |  |  |  IF "if" (7.34.5) {0} 
+|  |  |  |  |  '!' "!" (7.34.9) {0} 
+|  |  |  |  |  |  NE "!=" (7.34.17) {0} int vreg 
+|  |  |  |  |  |  |  IDENT "stack" (7.34.11) {20} struct "stack" variable lval param (7.7.14)
+|  |  |  |  |  |  |  NULL "null" (7.34.20) {0} null const 
+|  |  |  |  |  CALL "(" (7.34.41) {0} void function vreg 
+|  |  |  |  |  |  IDENT "__assert_fail" (7.34.27) {0} void function 
+|  |  |  |  |  |  STRINGCON ""stack != null"" (7.34.42) {0} string const 
+|  |  |  |  |  |  STRINGCON ""oc-programs/41-linkedstack.oc"" (7.34.59) {0} string const 
+|  |  |  |  |  |  INTCON "34" (7.34.92) {0} int const 
+|  |  |  ';' ";" (7.34.97) {0} 
+|  |  |  BLOCK "{" (7.35.4) {0} 
+|  |  |  |  IF "if" (7.35.5) {0} 
+|  |  |  |  |  '!' "!" (7.35.9) {0} 
+|  |  |  |  |  |  '!' "!" (7.35.11) {0} 
+|  |  |  |  |  |  |  CALL "(" (7.35.19) {0} int function vreg 
+|  |  |  |  |  |  |  |  IDENT "empty" (7.35.13) {0} int function 
+|  |  |  |  |  |  |  |  IDENT "stack" (7.35.20) {20} struct "stack" variable lval param (7.8.15)
+|  |  |  |  |  CALL "(" (7.35.43) {0} void function vreg 
+|  |  |  |  |  |  IDENT "__assert_fail" (7.35.29) {0} void function 
+|  |  |  |  |  |  STRINGCON ""! empty (stack)"" (7.35.44) {0} string const 
+|  |  |  |  |  |  STRINGCON ""oc-programs/41-linkedstack.oc"" (7.35.63) {0} string const 
+|  |  |  |  |  |  INTCON "35" (7.35.96) {0} int const 
+|  |  |  ';' ";" (7.35.101) {0} 
+|  |  |  VARDECL "=" (7.36.15) {21} 
+|  |  |  |  STRING "string" (7.36.4) {21} string 
+|  |  |  |  |  DECLID "tmp" (7.36.11) {21} string variable lval (7.5.15)
+|  |  |  |  '.' "." (7.36.26) {0} variable lval vaddr (7.4.36)
+|  |  |  |  |  '.' "." (7.36.22) {0} variable lval vaddr (7.5.36)
+|  |  |  |  |  |  IDENT "stack" (7.36.17) {20} struct "stack" variable lval param (7.6.16)
+|  |  |  |  |  |  FIELD "top" (7.36.23) field {} int variable lval const vaddr (7.6.36)
+|  |  |  |  |  FIELD "data" (7.36.27) field {} int variable lval const vaddr (7.5.36)
+|  |  |  '=' "=" (7.37.14) {0} vreg 
+|  |  |  |  '.' "." (7.37.9) {0} variable lval vaddr (7.4.37)
+|  |  |  |  |  IDENT "stack" (7.37.4) {20} struct "stack" variable lval param (7.5.17)
+|  |  |  |  |  FIELD "top" (7.37.10) field {} int variable lval const vaddr (7.5.37)
+|  |  |  |  '.' "." (7.37.25) {0} variable lval vaddr (7.4.37)
+|  |  |  |  |  '.' "." (7.37.21) {0} variable lval vaddr (7.5.37)
+|  |  |  |  |  |  IDENT "stack" (7.37.16) {20} struct "stack" variable lval param (7.6.17)
+|  |  |  |  |  |  FIELD "top" (7.37.22) field {} int variable lval const vaddr (7.6.37)
+|  |  |  |  |  FIELD "link" (7.37.26) field {} int variable lval const vaddr (7.5.37)
+|  |  |  RETURN "return" (7.38.4) {0} 
+|  |  |  |  IDENT "tmp" (7.38.11) {21} string variable lval (7.4.17)
+|  VARDECL "=" (7.43.15) {0} 
+|  |  ARRAY "[]" (7.43.7) {22924240} string array vreg 
+|  |  |  STRING "string" (7.43.1) {0} string 
+|  |  |  DECLID "argv" (7.43.10) {0} string array variable lval (7.3.43)
+|  |  CALL "(" (7.43.25) {0} string function vreg 
+|  |  |  IDENT "getargv" (7.43.17) {0} string function 
+|  VARDECL "=" (7.44.13) {0} 
+|  |  TYPEID "stack" (7.44.1) {0} struct "stack" 
+|  |  |  DECLID "stack" (7.44.7) {0} struct "stack" variable lval (7.3.44)
+|  |  CALL "(" (7.44.25) {0} function vreg 
+|  |  |  IDENT "new_stack" (7.44.15) {0} function 
+|  VARDECL "=" (7.45.10) {0} 
+|  |  INT "int" (7.45.1) {0} int 
+|  |  |  DECLID "argi" (7.45.5) {0} int variable lval (7.3.45)
+|  |  INTCON "0" (7.45.12) {0} int const 
+|  WHILE "while" (7.47.1) {0} 
+|  |  NE "!=" (7.47.19) {0} int vreg 
+|  |  |  INDEX "[" (7.47.12) {0} string lval vaddr 
+|  |  |  |  IDENT "argv" (7.47.8) {0} string array variable lval (7.4.47)
+|  |  |  |  IDENT "argi" (7.47.13) {0} int variable lval (7.4.47)
+|  |  |  NULL "null" (7.47.22) {0} null const 
+|  |  BLOCK "{" (7.47.28) {0} 
+|  |  |  CALL "(" (7.48.9) {0} void function vreg 
+|  |  |  |  IDENT "push" (7.48.4) {0} void function 
+|  |  |  |  IDENT "stack" (7.48.10) {20} struct "stack" variable lval param (7.4.28)
+|  |  |  |  INDEX "[" (7.48.21) {0} string lval vaddr 
+|  |  |  |  |  IDENT "argv" (7.48.17) {0} string array variable lval (7.5.48)
+|  |  |  |  |  IDENT "argi" (7.48.22) {0} int variable lval (7.5.48)
+|  |  |  '=' "=" (7.49.9) {0} int vreg 
+|  |  |  |  IDENT "argi" (7.49.4) {0} int variable lval (7.4.49)
+|  |  |  |  '+' "+" (7.49.16) {0} int vreg 
+|  |  |  |  |  IDENT "argi" (7.49.11) {0} int variable lval (7.5.49)
+|  |  |  |  |  INTCON "1" (7.49.18) {0} int const 
+|  WHILE "while" (7.52.1) {0} 
+|  |  '!' "!" (7.52.8) {0} 
+|  |  |  CALL "(" (7.52.16) {0} int function vreg 
+|  |  |  |  IDENT "empty" (7.52.10) {0} int function 
+|  |  |  |  IDENT "stack" (7.52.17) {20} struct "stack" variable lval param (7.4.32)
+|  |  BLOCK "{" (7.52.25) {0} 
+|  |  |  CALL "(" (7.53.9) {0} void function vreg 
+|  |  |  |  IDENT "puts" (7.53.4) {0} void function 
+|  |  |  |  CALL "(" (7.53.14) {0} string function vreg 
+|  |  |  |  |  IDENT "pop" (7.53.10) {0} string function 
+|  |  |  |  |  IDENT "stack" (7.53.15) {20} struct "stack" variable lval param (7.5.33)
+|  |  |  CALL "(" (7.54.9) {0} void function vreg 
+|  |  |  |  IDENT "endl" (7.54.4) {0} void function 

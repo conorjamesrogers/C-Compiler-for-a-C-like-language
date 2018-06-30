@@ -1,0 +1,43 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+* __fibonacci;
+int __index;
+void __ocmain (void)
+{
+        __fibonacci = xcalloc (30, sizeof(__fibonacci));
+        __index = 2;
+        a2 = &__fibonacci[0];
+        (*a2) = 0;
+        a3 = &__fibonacci[1];
+        (*a3) = 1;
+while_7_15_1:;
+        int i4 = __index < 30;
+        if(!i4) goto break_7_15_1;
+        int i6 = __index - 1;
+        a5 = &__fibonacci[i6];
+        int i8 = __index - 2;
+        a7 = &__fibonacci[i8];
+        int i9 = (*a5) + (*a7);
+        a10 = &__fibonacci[__index];
+        (*a10) = i9;
+        int i11 = __index + 1;
+        __index = i11;
+        goto while_7_15_1;
+break_7_15_1:;
+        __index = 0;
+        __puts("Numeri di figlio Bonacci\n");
+while_7_22_1:;
+        int i12 = __index < 30;
+        if(!i12) goto break_7_22_1;
+        __puts("fibonacci[");
+        __puti(__index);
+        __puts("] = ");
+        a13 = &__fibonacci[__index];
+        __puti((*a13));
+        __endl();
+        int i14 = __index + 1;
+        __index = i14;
+        goto while_7_22_1;
+break_7_22_1:;
+}

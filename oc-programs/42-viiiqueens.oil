@@ -1,0 +1,83 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+* __board;
+int __is_safe (
+        int _12_newcol)
+{
+        int _13_col = 0;
+while_7_10_4:;
+        int i1 = _13_col < _12_newcol;
+        if(!i1) goto break_7_10_4;
+        a3 = &__board[_13_col];
+        a4 = &__board[_12_newcol];
+        int i2 = (*a3) == (*a4);
+        if(!i2) goto fi_7_11_7;
+        return 0;
+fi_7_11_7:;
+        a5 = &__board[_13_col];
+        a6 = &__board[_12_newcol];
+        int _14_diagonal = (*a5) - (*a6);
+        int i8 = _13_col - _12_newcol;
+        int i7 = _14_diagonal == i8;
+        if(!i7) goto fi_7_13_7;
+        return 0;
+fi_7_13_7:;
+        int i10 = _12_newcol - _13_col;
+        int i9 = _14_diagonal == i10;
+        if(!i9) goto fi_7_14_7;
+        return 0;
+fi_7_14_7:;
+        int i11 = _13_col + 1;
+        _13_col = i11;
+        goto while_7_10_4;
+break_7_10_4:;
+        return 1;
+}
+ __printqueens (
+)
+{
+        int _13_col = 0;
+while_7_22_4:;
+        int i12 = _13_col < 8;
+        if(!i12) goto break_7_22_4;
+        a13 = &__board[_13_col];
+        int i14 = (*a13) + '1';
+        __putc(i14);
+        int i15 = _13_col + 1;
+        _13_col = i15;
+        goto while_7_22_4;
+break_7_22_4:;
+        __putc('\n');
+}
+ __queens (
+        int _12_newcol)
+{
+        int i16 = _12_newcol == 8;
+        if(!i16) goto else_7_30_4;
+                __printqueens();
+goto fi_7_30_4;
+else_7_30_4:;
+                int _20_row = 0;
+while_7_33_7:;
+        int i17 = _20_row < 8;
+        if(!i17) goto break_7_33_7;
+        a18 = &__board[_12_newcol];
+        (*a18) = _20_row;
+        int i20 = __is_safe (_12_newcol);
+        int i19 = i20;
+        if(!i19) goto fi_7_35_10;
+        int i21 = _12_newcol + 1;
+        __queens(i21);
+fi_7_35_10:;
+        int i22 = _20_row + 1;
+        _20_row = i22;
+        goto while_7_33_7;
+break_7_33_7:;
+fi_7_30_4:;
+}
+void __ocmain (void)
+{
+        __board = xcalloc (8, sizeof(__board));
+        __queens(0);
+}

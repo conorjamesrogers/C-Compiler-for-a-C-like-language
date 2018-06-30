@@ -1,0 +1,10 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+void __ocmain (void)
+{
+        int i1 = "null" == 0;
+        if(!i1) goto fi_7_4_2;
+        ____assert_fail("\"null\" == null", "oc-programs/07-assert.oc", 4);
+fi_7_4_2:;
+}

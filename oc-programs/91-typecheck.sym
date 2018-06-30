@@ -1,0 +1,17 @@
+a (4.7.7) {0} array variable lval 
+a (4.8.13) {0} array variable lval 
+foo (4.9.6) {0} void function 
+
+foo (4.10.6) {0} void function 
+   a (4.10.11) {2} int variable lval 
+
+foo (4.11.6) {0} function 
+   a (4.11.11) {3} int array variable lval param 
+   b (4.11.20) {3} int array variable lval param 
+
+      x (4.11.30) {4} int variable lval 
+
+foo (4.12.1) {0} struct "foo" 
+   a (4.12.14) field {foo} int 
+   b (4.12.21) field {foo} int 
+

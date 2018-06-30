@@ -1,0 +1,98 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+struct s_node {
+        int f_node_data;
+        int f_node_link;
+};
+struct s_stack {
+        int f_stack_top;
+};
+char **__argv;
+s_stack*  __stack;
+int __argi;
+int __empty (
+        s_stack*  __stack)
+{
+        int i1 = __stack != 0;
+        if(!i1) goto fi_7_15_5;
+        ____assert_fail("stack != null", "oc-programs/41-linkedstack.oc", 15);
+fi_7_15_5:;
+        *a2 = &__stack->f_stack_top;
+        return (*a2) == 0;
+}
+s_stack*  __new_stack (
+)
+{
+        struct s_stack* __stack = xcalloc (1, sizeof (struct s_stack));
+        *a3 = &__stack->f_stack_top;
+        (*a3) = 0;
+        return __stack;
+}
+ __push (
+        s_stack*  __stack,
+        char* _17_str)
+{
+        int i4 = __stack != 0;
+        if(!i4) goto fi_7_26_5;
+        ____assert_fail("stack != null", "oc-programs/41-linkedstack.oc", 26);
+fi_7_26_5:;
+        struct s_node* _18_tmp = xcalloc (1, sizeof (struct s_node));
+        *a5 = &_18_tmp->f_node_data;
+        (*a5) = _17_str;
+        *a6 = &__stack->f_stack_top;
+        *a7 = &_18_tmp->f_node_link;
+        (*a7) = (*a6);
+        *a8 = &__stack->f_stack_top;
+        (*a8) = _18_tmp;
+}
+char* __pop (
+        s_stack*  __stack)
+{
+        int i9 = __stack != 0;
+        if(!i9) goto fi_7_34_5;
+        ____assert_fail("stack != null", "oc-programs/41-linkedstack.oc", 34);
+fi_7_34_5:;
+        int i11 = __empty (__stack);
+        int i10 = i11;
+        if(!i10) goto fi_7_35_5;
+        ____assert_fail("! empty (stack)", "oc-programs/41-linkedstack.oc", 35);
+fi_7_35_5:;
+        *a13 = &__stack->f_stack_top;
+        *a12 = &(*a13)->f_stack_data;
+        char* _18_tmp = (*a12);
+        *a15 = &__stack->f_stack_top;
+        *a14 = &(*a15)->f_stack_link;
+        *a16 = &__stack->f_stack_top;
+        (*a16) = (*a14);
+        return _18_tmp;
+}
+void __ocmain (void)
+{
+        char* s18 = __getargv ();
+        __argv = s18;
+);
+        __stack = ;
+        __argi = 0;
+while_7_47_1:;
+        char *a20 = &__argv[__argi];
+        int i19 = (*a20) != 0;
+        char *a21 = &__argv[__argi];
+        if(!i19) goto break_7_47_1;
+        char *a22 = &__argv[__argi];
+        __push(__stack, (*a22));
+        int i23 = __argi + 1;
+        __argi = i23;
+        goto while_7_47_1;
+break_7_47_1:;
+while_7_52_1:;
+        int i25 = __empty (__stack);
+        int i24 = i25;
+        int i26 = __empty (__stack);
+        if(!i24) goto break_7_52_1;
+        char* s27 = __pop (__stack);
+        __puts(s27);
+        __endl();
+        goto while_7_52_1;
+break_7_52_1:;
+}

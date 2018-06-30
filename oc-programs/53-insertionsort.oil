@@ -1,0 +1,111 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+char **__argv;
+int __argc;
+int __strcmp (
+        char* _12_s1,
+        char* _12_s2)
+{
+        int _13_index = 0;
+        int _13_contin = 1;
+while_7_11_4:;
+        if(!_13_contin) goto break_7_11_4;
+        int _14_s1c = _12_s1[_13_index];
+        int _14_s2c = _12_s2[_13_index];
+        int _14_cmp = _14_s1c - _14_s2c;
+        int i1 = _14_cmp != 0;
+        if(!i1) goto fi_7_15_7;
+        return _14_cmp;
+fi_7_15_7:;
+        int i2 = _14_s1c == '\0';
+        if(!i2) goto fi_7_16_7;
+        _13_contin = 0;
+fi_7_16_7:;
+        int i3 = _13_index + 1;
+        _13_index = i3;
+        goto while_7_11_4;
+break_7_11_4:;
+        return 0;
+}
+ __insertion_sort (
+        int _15_size,
+        char** __array)
+{
+        int _16_sorted = 1;
+while_7_24_4:;
+        int i4 = _16_sorted < _15_size;
+        if(!i4) goto break_7_24_4;
+        int _17_slot = _16_sorted;
+        char* _17_element = __array[_17_slot];
+        int _13_contin = 1;
+while_7_28_7:;
+        if(!_13_contin) goto break_7_28_7;
+        int i5 = _17_slot == 0;
+        if(!i5) goto else_7_29_10;
+                _13_contin = 0;
+goto fi_7_29_10;
+else_7_29_10:;
+                int i8 = _17_slot - 1;
+        char *a7 = &__array[i8];
+        int i9 = __strcmp ((*a7), _17_element);
+        int i6 = i9 <= 0;
+        if(!i6) goto else_7_31_16;
+                _13_contin = 0;
+goto fi_7_31_16;
+else_7_31_16:;
+                int i11 = _17_slot - 1;
+        char *a10 = &__array[i11];
+        char *a12 = &__array[_17_slot];
+        (*a12) = (*a10);
+        int i13 = _17_slot - 1;
+        _17_slot = i13;
+fi_7_31_16:;
+fi_7_29_10:;
+        goto while_7_28_7;
+break_7_28_7:;
+        char *a14 = &__array[_17_slot];
+        (*a14) = _17_element;
+        int i15 = _16_sorted + 1;
+        _16_sorted = i15;
+        goto while_7_24_4;
+break_7_24_4:;
+}
+ __print_array (
+        char* _22_label,
+        int _15_size,
+        char** __array)
+{
+        __endl();
+        __puts(_22_label);
+        __puts(":\n");
+        int _13_index = 0;
+while_7_48_4:;
+        int i16 = _13_index < _15_size;
+        if(!i16) goto break_7_48_4;
+        char *a17 = &__array[_13_index];
+        __puts((*a17));
+        __endl();
+        int i18 = _13_index + 1;
+        _13_index = i18;
+        goto while_7_48_4;
+break_7_48_4:;
+}
+void __ocmain (void)
+{
+        char* s20 = __getargv ();
+        __argv = s20;
+        __argc = 0;
+while_7_57_1:;
+        char *a22 = &__argv[__argc];
+        int i21 = (*a22) != 0;
+        char *a23 = &__argv[__argc];
+        if(!i21) goto break_7_57_1;
+        int i24 = __argc + 1;
+        __argc = i24;
+        goto while_7_57_1;
+break_7_57_1:;
+        __print_array("unsorted", __argc, __argv);
+        __insertion_sort(__argc, __argv);
+        __print_array("sorted", __argc, __argv);
+}

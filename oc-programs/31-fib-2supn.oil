@@ -1,0 +1,35 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __n;
+int __fibonacci (
+        int _12_n)
+{
+        int i1 = _12_n < 2;
+        if(!i1) goto fi_7_9_4;
+        return _12_n;
+fi_7_9_4:;
+        int i2 = _12_n - 1;
+        int i3 = __fibonacci (i2);
+        int i4 = _12_n - 2;
+        int i5 = __fibonacci (i4);
+        int i6 = i3 + i5;
+        return i6;
+}
+void __ocmain (void)
+{
+        _12_n = 0;
+while_7_16_1:;
+        int i7 = _12_n < 10;
+        if(!i7) goto break_7_16_1;
+        __puts("fibonacci(");
+        __puti(_12_n);
+        __puts(") = ");
+        int i8 = __fibonacci (_12_n);
+        __puti(i8);
+        __endl();
+        int i9 = _12_n + 1;
+        _12_n = i9;
+        goto while_7_16_1;
+break_7_16_1:;
+}

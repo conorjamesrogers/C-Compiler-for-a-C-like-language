@@ -1,0 +1,49 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+* __vec1;
+* __vec2;
+int __i;
+int __dot_product (
+        int _12_size,
+        int* __vec1,
+        int* __vec2)
+{
+        int _13_index = 0;
+        int _13_dot = 0;
+while_7_8_4:;
+        int i1 = _13_index < _12_size;
+        if(!i1) goto break_7_8_4;
+        int *a2 = &__vec1[_13_index];
+        int *a3 = &__vec2[_13_index];
+        int i4 = (*a2) * (*a3);
+        int i5 = _13_dot + i4;
+        _13_dot = i5;
+        int i6 = _13_index + 1;
+        _13_index = i6;
+        goto while_7_8_4;
+break_7_8_4:;
+        return _13_dot;
+}
+void __ocmain (void)
+{
+        __vec1 = xcalloc (10, sizeof(__vec1));
+        __vec2 = xcalloc (10, sizeof(__vec2));
+        __i = 0;
+while_7_19_1:;
+        int i9 = __i < 10;
+        if(!i9) goto break_7_19_1;
+        int i10 = __i + 10;
+        int *a11 = &__vec1[__i];
+        (*a11) = i10;
+        int i12 = __i * 10;
+        int *a13 = &__vec2[__i];
+        (*a13) = i12;
+        int i14 = __i + 1;
+        __i = i14;
+        goto while_7_19_1;
+break_7_19_1:;
+        int i15 = __dot_product (10, __vec1, __vec2);
+        __puti(i15);
+        __endl();
+}

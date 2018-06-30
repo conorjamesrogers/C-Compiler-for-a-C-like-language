@@ -1,0 +1,33 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __n;
+int __fac (
+        int _12_n)
+{
+        int _13_f = 1;
+while_7_10_4:;
+        int i1 = _12_n > 1;
+        if(!i1) goto break_7_10_4;
+        int i2 = _13_f * _12_n;
+        _13_f = i2;
+        int i3 = _12_n - 1;
+        _12_n = i3;
+        goto while_7_10_4;
+break_7_10_4:;
+        return _13_f;
+}
+void __ocmain (void)
+{
+        _12_n = 1;
+while_7_18_1:;
+        int i4 = _12_n <= 5;
+        if(!i4) goto break_7_18_1;
+        int i5 = __fac (_12_n);
+        __puti(i5);
+        __endl();
+        int i6 = _12_n + 1;
+        _12_n = i6;
+        goto while_7_18_1;
+break_7_18_1:;
+}

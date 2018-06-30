@@ -1,0 +1,28 @@
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __a;
+void __ocmain (void)
+{
+        __a = 3;
+        int i1 = __a == 1;
+        if(!i1) goto else_7_7_1;
+                __puts("one");
+goto fi_7_7_1;
+else_7_7_1:;
+                int i2 = __a == 2;
+        if(!i2) goto else_7_8_6;
+                __puts("two");
+goto fi_7_8_6;
+else_7_8_6:;
+                int i3 = __a == 3;
+        if(!i3) goto else_7_9_6;
+                __puts("three");
+goto fi_7_9_6;
+else_7_9_6:;
+                __puts("many");
+fi_7_9_6:;
+fi_7_8_6:;
+fi_7_7_1:;
+        __endl();
+}
