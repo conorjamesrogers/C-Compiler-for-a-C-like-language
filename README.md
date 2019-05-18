@@ -1,5 +1,6 @@
 # C-Compiler-for-a-C-like-language
- parser.y - GNU Bison XML Automaton Report body { font-family: "Nimbus Sans L", Arial, sans-serif; font-size: 9pt; } a:link { color: #1f00ff; text-decoration: none; } a:visited { color: #1f00ff; text-decoration: none; } a:hover { color: red; } #menu a { text-decoration: underline; } .i { font-style: italic; } .pre { font-family: monospace; white-space: pre; } ol.decimal { list-style-type: decimal; } ol.lower-alpha { list-style-type: lower-alpha; } .point { color: #cc0000; } #footer { margin-top: 3.5em; font-size: 7pt; } 
+
+The following is an automated report about my lexical parsing and grammar for this C compiler.
 
 GNU Bison XML Automaton Report
 ==============================
